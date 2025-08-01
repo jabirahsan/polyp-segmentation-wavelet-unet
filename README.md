@@ -2,10 +2,8 @@
 
 This repository contains UNet, ResUnet and ResUnet++ models to segment colorectal polyp segmentation. The project mainly uses CVC-ClinicDB dataset. It can be modified for any segmentation data. Also, explanations from layers of the models are done. The explanation part is done by following the paper,
 
-## 📄 Related Paper
-
-**"ResUNet++: An Advanced Architecture for Semantic Segmentation"**  
-[Read the paper here](https://arxiv.org/abs/1911.07067)
+**"LeXNet++: Layer-wise eXplainable ResUNet++ framework for segmentation of colorectal polyp cancer images"**  
+[Read the paper here](https://link.springer.com/article/10.1007/s00521-024-10441-6)
 
 
 
