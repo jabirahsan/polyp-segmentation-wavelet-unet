@@ -23,12 +23,13 @@ This repository implements a deep learning-based model for **polyp segmentation*
 ## Prerequisites
 
 - Python 3.x
-- TensorFlow (or PyTorch, depending on the framework you’re using)
+- TensorFlow
 - NumPy
 - OpenCV
 - Keras
 - Scikit-learn
 - Matplotlib
+- Seaborn
 
 You can install the required dependencies using the following:
 
