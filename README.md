@@ -34,6 +34,8 @@ ASPP Block,
 
 
 The predictions of different models are,
+
+
 <img width="598" height="479" alt="image" src="https://github.com/user-attachments/assets/8b256731-5ab4-4c7e-b4bf-2859405b403c" />
 
 The first one is the real image, second one is the ground truth, third is the UNet output, fourth is the ResUnet++ output and final is ours custom implementation output.
