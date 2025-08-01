@@ -9,6 +9,11 @@ This repository implements a deep learning-based model for **polyp segmentation*
 - **ResUNet++**: A further enhancement of ResUNet that incorporates dense skip pathways.
 - **Custom Inception U-Net**: A novel custom architecture combining Inception modules and U-Net, with a unique **Wavelet Pooling** technique for improved feature extraction and segmentation results.
 
+Moreover, an **Explanation of layerwise output** is done to visualize the process of obtaining the output. This part is adopted from the paper,
+
+[**LeXNet++: Layer-wise eXplainable ResUNet++ framework for segmentation of colorectal polyp cancer images**](https://link.springer.com/article/10.1007/s00521-024-10441-6)
+
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
