@@ -17,6 +17,8 @@ Moreover, a custom UNet utilizing Inception Block and ASPP block is made which i
 ---
 
 The encoder block  is,
+
+
 <img width="821" height="661" alt="InceptionEncoder drawio (2)" src="https://github.com/user-attachments/assets/60f05ec0-2ecd-41de-b177-db0629684ef8" />
 
 --- 
