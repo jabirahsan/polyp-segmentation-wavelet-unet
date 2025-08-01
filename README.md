@@ -1,4 +1,4 @@
-<img width="931" height="551" alt="ASPP drawio" src="https://github.com/user-attachments/assets/df649f48-ec46-47ab-92fe-c533831738d5" /><img width="821" height="661" alt="InceptionEncoder drawio (2)" src="https://github.com/user-attachments/assets/4de29998-c4b3-450a-b291-ea2c1fc2579d" /># polyp-segmentation
+# polyp-segmentation
 
 This repository contains UNet, ResUnet and ResUnet++ models to segment colorectal polyp segmentation. The project mainly uses CVC-ClinicDB dataset. It can be modified for any segmentation data. Also, explanations from layers of the models are done. The explanation part is done by following the paper,
 
