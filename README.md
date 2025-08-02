@@ -17,15 +17,16 @@ Moreover, an **Explanation of layerwise output** is done to visualize the proces
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Models](#models)
-- [Sample Results](#sampleresults)
-- [Installation](#Installation)
-- [How to Run](#HowtoRun)
-- [Contributing](#contributing)
-- [License](#license)
-
+- [📁 Project Structure](#-project-structure)
+- [🚀 Models](#-models)
+- [📷 Sample Result](#-sample-result)
+- [📦 Installation](#-installation)
+- [🏃‍♂️ How to Run](#-how-to-run)
+  - [1️⃣ Train the Models](#1️⃣-train-the-models)
+  - [2️⃣ Run Inference](#2️⃣-run-inference)
+- [📊 Results & Evaluation](#-results--evaluation)
+- [📚 Citations](#-citations)
+- [🤝 Contributing](#-contributing)
 ## Prerequisites
 
 - Python 3.x
@@ -92,7 +93,7 @@ cd polyp-segmentation
 pip install -r requirements.txt
 ```
 
-3. 📂 Data Preparation
+3. Data Preparation
 
 Place your dataset inside the data/ directory.
 ```bash
@@ -109,7 +110,7 @@ Make sure the image and mask filenames align.
 
 ## 🏃‍♂️ How to Run
 
-1. Train each model (UNet, ResUNet++, and CustomNet):
+1. # Train each model (UNet, ResUNet++, and CustomNet):
 
 ```bash
 python train.py --model unet
@@ -120,7 +121,7 @@ python train.py --model customnet
 
 In case you don't want to train the models. [***Download the Model Weights from here***](https://drive.google.com/drive/folders/1kMuCQCwtqTzJFuFzgRX6_zSYTMNLYn2F?usp=sharing). After downloading place the files in a folder named Final.
 
-2. Run Inference
+2. # Run Inference
 
 Once all models are trained, run inference and/or evaluation:
 
@@ -136,6 +137,8 @@ This will:
 -Generate evaluation metrics and visualizations
 
 -Generate Layerwise Heatmap of Models
+
+
 
 
 
