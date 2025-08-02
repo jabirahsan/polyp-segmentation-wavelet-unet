@@ -22,11 +22,11 @@ Moreover, an **Explanation of layerwise output** is done to visualize the proces
 - [📷 Sample Result](#-sample-result)
 - [📦 Installation](#-installation)
 - [🏃‍♂️ How to Run](#-how-to-run)
-  - [1️⃣ Train the Models](#1️⃣-train-the-models)
-  - [2️⃣ Run Inference](#2️⃣-run-inference)
 - [📊 Results & Evaluation](#-results--evaluation)
 - [📚 Citations](#-citations)
 - [🤝 Contributing](#-contributing)
+
+
 ## Prerequisites
 
 - Python 3.x
@@ -50,20 +50,20 @@ The project should be structured as following to run properly,
 
 ```bash
 data/                
-├── original/         # Contains input images
+├── Original/         # Contains input images
 │   ├── image1.png
 │   ├── image2.png
 │   └── ...
-├── ground_truth/     # Corresponding masks (ground truth)
+├── Ground Truth/     # Corresponding masks (ground truth)
 │   ├── image1.png
 │   ├── image2.png
 │   └── ...
-├── models/                 # Contains model definitions: unet, resunet, etc.
-├── train.py                # Script to train the models
-├── main.py                 # Script to run inference/visualization
-├── utils/                  # Utility functions (data loaders, metrics, etc.)
-├── requirements.txt        # Python dependencies
-└── README.md               # You're here!
+├── models/                 
+├── train.py               
+├── main.py                 
+├── utils                 
+├── requirements.txt        
+└── README.md               
 ```
 
 
@@ -78,6 +78,11 @@ data/
 
 
 ## 📷 Sample Result
+
+<img width="604" height="479" alt="image" src="https://github.com/user-attachments/assets/39516714-a430-4a6b-b931-bd7c703f4177" />
+
+
+From the left a) Original Image  b) Ground Truth  c) Unet Prediction  d) ResUnet++ Prediction   e) Custom Model Prediction
 
 
 ## 📦 Installation
@@ -98,19 +103,21 @@ pip install -r requirements.txt
 Place your dataset inside the data/ directory.
 ```bash
 data/
-├── train/
-│   ├── images/
-│   └── masks/
-├── test/
-│   ├── images/
-│   └── masks/
+├── Original/         # Contains input images
+│   ├── image1.png
+│   ├── image2.png
+│   └── ...
+├── Ground Truth/     # Corresponding masks (ground truth)
+│   ├── image1.png
+│   ├── image2.png
+│   └── ...
 
 ```
 Make sure the image and mask filenames align.
 
 ## 🏃‍♂️ How to Run
 
-1. # Train each model (UNet, ResUNet++, and CustomNet):
+1. Train each model (UNet, ResUNet++, and CustomNet):
 
 ```bash
 python train.py --model unet
@@ -119,9 +126,15 @@ python train.py --model customnet
 
 ```
 
-In case you don't want to train the models. [***Download the Model Weights from here***](https://drive.google.com/drive/folders/1kMuCQCwtqTzJFuFzgRX6_zSYTMNLYn2F?usp=sharing). After downloading place the files in a folder named Final.
+In case you don't want to train the models. [***Download the Model Weights from here***](https://drive.google.com/drive/folders/1kMuCQCwtqTzJFuFzgRX6_zSYTMNLYn2F?usp=sharing). After downloading place the files as following,
+```bash
+Final/
+├── unet.keras        # Contains input images
+├── resunetplus.keras
+│── customnet.keras
 
-2. # Run Inference
+```
+2. Run Inference
 
 Once all models are trained, run inference and/or evaluation:
 
@@ -137,6 +150,31 @@ This will:
 -Generate evaluation metrics and visualizations
 
 -Generate Layerwise Heatmap of Models
+
+## 📊 Results & Evaluation
+
+The model evaluation on validation and test set is,
+
+<img width="695" height="94" alt="image" src="https://github.com/user-attachments/assets/0debab99-0ab1-43fb-89a4-5964a1f04799" />
+
+
+
+# 📚 Citations
+
+If you use this repository, please cite the following papers (if applicable):
+
+-UNet: Ronneberger et al., 2015
+
+-ResUNet: Zhang et al., 2018
+
+-ResUNet++: Jha et al., 2019
+
+-Wavelet Pooling: Williams et al., 2018 (if used as basis)
+
+
+## 🤝 Contributing
+Feel free to open issues or pull requests if you'd like to contribute.
+
 
 
 
