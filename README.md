@@ -146,13 +146,13 @@ python main.py
 ```
 This will:
 
--Load all trained models
+- Load all trained models
 
--Perform segmentation on the test set
+- Perform segmentation on the test set
 
--Generate evaluation metrics and visualizations
+- Generate evaluation metrics and visualizations
 
--Generate Layerwise Heatmap of Models
+- Generate Layerwise Heatmap of Models
 
 ## 📊 Results & Evaluation
 
