@@ -40,3 +40,8 @@ You can install the required dependencies using the following:
 
 ```bash
 pip install -r requirements.txt
+'''
+
+
+## Project Struecure
+
