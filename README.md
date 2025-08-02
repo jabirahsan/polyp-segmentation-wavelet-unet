@@ -166,13 +166,13 @@ The model evaluation on validation and test set is,
 
 If you use this repository, please cite the following papers (if applicable):
 
--UNet: Ronneberger et al., 2015
+- UNet: Ronneberger et al., 2015
 
--ResUNet: Zhang et al., 2018
+- ResUNet: Zhang et al., 2018
 
--ResUNet++: Jha et al., 2019
+- ResUNet++: Jha et al., 2019
 
--Wavelet Pooling: Williams et al., 2018 (if used as basis)
+- Wavelet Pooling: Williams et al., 2018 (if used as basis)
 
 
 ## 🤝 Contributing
