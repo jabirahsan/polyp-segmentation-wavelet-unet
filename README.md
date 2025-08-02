@@ -139,7 +139,7 @@ Final/
 ```
 2. Run Inference
 
-Once all models are trained, run inference and/or evaluation:
+Once all models are trained, run evaluation & explanation:
 
 ```bash
 python main.py
