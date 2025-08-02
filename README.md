@@ -20,8 +20,9 @@ Moreover, an **Explanation of layerwise output** is done to visualize the proces
 - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Models](#models)
-- [Training Instructions](#training-instructions)
-- [Usage](#usage)
+- [Sample Results](#sampleresults)
+- [Installation](#Installation)
+- [How to Run](#HowtoRun)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -73,6 +74,77 @@ data/
 | **ResUNet**                          | UNet with residual connections                                                                                 |
 | **ResUNet++**                        | Enhanced ResUNet with attention & dilated convolutions                                                         |
 | **Inception-UNet + Wavelet Pooling** | Our custom architecture with inception modules and wavelet pooling for improved multi-scale feature extraction |
+
+
+## 📷 Sample Result
+
+
+## 📦 Installation
+
+1. Clone The Repo
+```bash
+git clone https://github.com/jabirahsan/polyp-segmentation.git
+cd polyp-segmentation
+```
+
+2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+3. 📂 Data Preparation
+
+Place your dataset inside the data/ directory.
+```bash
+data/
+├── train/
+│   ├── images/
+│   └── masks/
+├── test/
+│   ├── images/
+│   └── masks/
+
+```
+Make sure the image and mask filenames align.
+
+## 🏃‍♂️ How to Run
+
+1. Train each model (UNet, ResUNet++, and CustomNet):
+
+```bash
+python train.py --model unet
+python train.py --model resunetplus
+python train.py --model customnet
+
+```
+
+In case you don't want to train the models. [***Download the Model Weights from here***](https://drive.google.com/drive/folders/1kMuCQCwtqTzJFuFzgRX6_zSYTMNLYn2F?usp=sharing). After downloading place the files in a folder named Final.
+
+2. Run Inference
+
+Once all models are trained, run inference and/or evaluation:
+
+```bash
+python main.py
+```
+This will:
+
+-Load all trained models
+
+-Perform segmentation on the test set
+
+-Generate evaluation metrics and visualizations
+
+-Generate Layerwise Heatmap of Models
+
+
+
+
+
+
+
+    
+
 
 
 
