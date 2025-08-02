@@ -13,6 +13,8 @@ Moreover, an **Explanation of layerwise output** is done to visualize the proces
 
 [**LeXNet++: Layer-wise eXplainable ResUNet++ framework for segmentation of colorectal polyp cancer images**](https://link.springer.com/article/10.1007/s00521-024-10441-6)
 
+The dataset used for the project is CVC-ClinicDB. The dataset can be downloaded [from here](https://www.kaggle.com/datasets/balraj98/cvcclinicdb). But the code can be used for any segmentation task if the images and masks are arranged in the specified format.
+
 
 ## Table of Contents
 
