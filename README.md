@@ -90,7 +90,7 @@ From the left a) Original Image  b) Ground Truth  c) Unet Prediction  d) ResUnet
 
 1. Clone The Repo
 ```bash
-git clone https://github.com/jabirahsan/polyp-segmentation.git
+git clone https://github.com/jabirahsan/polyp-segmentation-wavelet-unet.git
 cd polyp-segmentation
 ```
 
