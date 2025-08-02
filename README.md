@@ -40,8 +40,43 @@ You can install the required dependencies using the following:
 
 ```bash
 pip install -r requirements.txt
-'''
+```
+
+## 📁 Project Structure
+
+The project should be structured as following to run properly,
+
+```bash
+data/                
+├── original/         # Contains input images
+│   ├── image1.png
+│   ├── image2.png
+│   └── ...
+├── ground_truth/     # Corresponding masks (ground truth)
+│   ├── image1.png
+│   ├── image2.png
+│   └── ...
+├── models/                 # Contains model definitions: unet, resunet, etc.
+├── train.py                # Script to train the models
+├── main.py                 # Script to run inference/visualization
+├── utils/                  # Utility functions (data loaders, metrics, etc.)
+├── requirements.txt        # Python dependencies
+└── README.md               # You're here!
+```
 
 
-## Project Struecure
+## 🚀 Models
+
+| Model                                | Description                                                                                                    |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **UNet**                             | Standard baseline for biomedical segmentation                                                                  |
+| **ResUNet**                          | UNet with residual connections                                                                                 |
+| **ResUNet++**                        | Enhanced ResUNet with attention & dilated convolutions                                                         |
+| **Inception-UNet + Wavelet Pooling** | Our custom architecture with inception modules and wavelet pooling for improved multi-scale feature extraction |
+
+
+
+
+
+
 
